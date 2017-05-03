@@ -1,0 +1,342 @@
+/*@import './bootstrap/bootstrap.less';*/
+/*@import 'slices/base.less';*/
+/*Color Scheme Variables*/
+/*End Color Scheme */
+/*Navbar Customization*/
+.navbar
+{
+    margin-bottom: 3px;
+}
+.navbar-default
+{
+    z-index: 1000;
+
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .19), 0 2px 2px rgba(0, 0, 0, .23);
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover
+{
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle
+{
+    color: #455a64;
+    border-color: transparent;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-text
+{
+    color: #455a64;
+}
+.navbar-nav > li
+{
+    border-top: 3px solid transparent;
+}
+.navbar-nav > li:hover
+{
+    border-top: 3px solid #455a64;
+}
+/*End Navbar Customization*/
+/*Header Customization*/
+#header-desc
+{
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 50px;
+
+    display: block;
+
+    width: 400px;
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+.btn-header
+{
+    line-height: 41px;
+
+    position: relative;
+    /*top: -34px;*/
+
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    text-align: -webkit-center;
+
+    color: #454054;
+    border: 1px solid #454054;
+    border-radius: 100px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .25), 0 0 7px rgba(0, 0, 0, .22);
+            box-shadow: 0 0 0 rgba(0, 0, 0, .25), 0 0 7px rgba(0, 0, 0, .22);
+}
+@media screen and (max-width: 545px)
+{
+    #header-desc
+    {
+        top: 18%;
+
+        width: 250px;
+    }
+}
+@media screen and (max-width: 414px)
+{
+    #header-desc
+    {
+        top: 12%;
+        left: 0;
+
+        width: 408px;
+
+        text-align: -webkit-center;
+    }
+}
+@media screen and (max-width: 375px)
+{
+    #header-desc
+    {
+        top: 10%;
+        left: 0;
+
+        width: 373px;
+
+        text-align: -webkit-center;
+    }
+}
+@media screen and (max-width: 320px)
+{
+    #header-desc
+    {
+        top: 6%;
+        left: 0;
+
+        width: 315px;
+
+        text-align: -webkit-center;
+    }
+    h1
+    {
+        font-size: 28px;
+    }
+}
+/*End Header Customization*/
+/*Materials Section Customization*/
+#materials-header
+{
+    height: 60px;
+    margin-top: 0;
+    padding: 15px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #455a64;
+}
+#materials-list
+{
+    position: fixed;
+    top: 300px;
+    right: 0;
+
+    display: block;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: red;
+}
+.modal-body a
+{
+    font-size: 18px;
+    font-weight: 600;
+}
+/*Change To Default Transition of Modal*/
+.fade
+{
+    -webkit-transition: opacity .25s ease;
+         -o-transition: opacity .25s ease;
+            transition: opacity .25s ease;
+
+    opacity: 0;
+}
+#materials h3,
+#materials span
+{
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+}
+#materials span
+{
+    margin-bottom: 15px;
+    padding: 0 5px 0 5px;
+}
+#materials button
+{
+    display: block;
+
+    margin: 0 auto;
+
+    border: transparent;
+    outline: none;
+    background-color: transparent;
+}
+#materials .glyphicon
+{
+    font-size: 40px;
+
+    display: block;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 25px;
+
+    -webkit-transition: all .3s ease 0s;
+       -moz-transition: all .3s ease 0s ;
+         -o-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+    text-align: center;
+
+    color: #607d8b;
+    border: 3px solid #607d8b;
+    border-radius: 200px;
+}
+#materials .glyphicon:hover
+{
+    -webkit-transition: all .3s ease 0s;
+       -moz-transition: all .3s ease 0s ;
+         -o-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+
+    color: #f0ad4e;
+    border: 3px solid #f0ad4e;
+}
+/*End Materials Section Customization**/
+/*Fundamentals Section Customization*/
+#fundamentals-header
+{
+    height: 60px;
+    padding: 15px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #9e9e9e;
+}
+#sidebar
+{
+    margin-bottom: 15px;
+}
+#sidebar h3
+{
+    height: 35px;
+    margin-bottom: 0;
+    padding: 5px;
+
+    text-align: center;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #84a0ad;
+}
+#sidebar ul
+{
+    height: 300px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding: 15px;
+
+    text-align: center;
+
+    border: 1px solid #666;
+    border: 1px solid #84a0ad;
+
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
+}
+#sidebar li
+{
+    font-size: 18px;
+    font-weight: 600;
+
+    margin-bottom: 5px;
+
+    list-style: none;
+}
+@media screen and (max-width: 992px)
+{
+    #sidebar
+    {
+        display: none;
+    }
+}
+/*End Fundamentals Section Customization*/
+/*Exercises Section Customiztion*/
+#exercises-header
+{
+    height: 60px;
+    margin-top: 0;
+    padding: 15px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #84a0ad;
+}
+#exercises
+{
+    height: 100%;
+}
+.tab-pane
+{
+    margin-bottom: 25px;
+}
+/*END Exercises Section Customiztion*/
+/*Inspiration Section Customiztion*/
+#inspiration-header
+{
+    height: 60px;
+    margin-top: 0;
+    padding: 15px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #e00000;
+}
+#inspiration
+{
+    min-height: 350px;
+}
+/*END Inspiration Section Customiztion*/
+/*Footer Section Customiztion*/
+#footer
+{
+    font-size: 12px;
+
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    height: 55px;
+    padding: 15px;
+
+    text-align: center;
+
+    color: #455a64;
+    background-color: #fff;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, .19), 0 2px 2px rgba(0, 0, 0, .23);
+}
+/*End Footer Section Customiztion*/

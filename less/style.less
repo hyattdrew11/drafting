@@ -1,0 +1,155 @@
+// Bootstrap
+/*@import 'bootstrap/bootstrap';*/
+
+// Base Styles
+/*@import 'slices/base.less';*/
+
+
+/*Color Scheme*/
+
+@darkPrimaryColor:   #455A64;
+@primaryColor:       #607D8B;
+@lightPrimaryColor:  #CFD8DC;
+@textPrimaryColor:   #FFFFFF;
+@accentColor:        #9E9E9E;
+@primaryTextColor:   #212121;
+@secondaryTextColor: #757575;
+@dividerColor:       #BDBDBD;
+
+/*End Color Scheme */
+
+h2 {
+
+}
+
+
+/*Navbar Customization*/
+.navbar {
+  margin-bottom: 3px;
+}
+.navbar-default {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0px 10px rgba(0,0,0,.19), 0 2px 2px rgba(0,0,0,.23);
+    z-index: 1000;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+}
+.navbar-default .navbar-toggle {
+  color: @darkPrimaryColor;
+    border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text {
+    color: @darkPrimaryColor;
+}
+.navbar-nav>li {
+  border-top:3px solid transparent;
+}
+.navbar-nav>li:hover {
+  border-top:3px solid @accentColor;
+}
+/*End Navbar Customization*/
+
+/*Header Customization*/
+  #header-desc {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+    top: 25%;
+    left: 50px
+    width: 400px;
+    /*text-align: center;*/
+}
+.btn-header {
+    text-align: -webkit-center;
+    line-height: 41px;
+    position: relative;
+    /*top: -34px;*/
+    display:block;
+    width: 50px;
+    height: 50px;
+    color: #454054;
+    border: 1px solid #454054;
+    border-radius: 100px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 0 rgba(0,0,0,.25), 0 0 7px rgba(0,0,0,.22);
+    box-shadow: 0 0 0 rgba(0,0,0,.25), 0 0 7px rgba(0,0,0,.22);
+}
+  @media screen and (max-width: 414px) {
+    #header-desc {
+    width: 409px;
+    top: 12%;
+    left: 0;
+    text-align: -webkit-center;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    #header-desc {
+    width: 373px;
+    top: 10%;
+    left: 0;
+    text-align: -webkit-center;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    #header-desc {
+    width: 315px;
+    top: 5%;
+    left: 0;
+    text-align: -webkit-center;
+    }
+  }
+/*End Header Customization*/
+
+/*Materials Section Customization*/
+#materials-header {
+  height: 60px;
+  color: #fff;
+  background-color: @darkPrimaryColor;
+  margin-top: 0px;
+  padding: 15px;
+  text-align: center;
+}
+#materials-list {
+  display: block;
+  position: fixed;
+  right: 0;
+  top:300px;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+#materials{ 
+  h3, span {
+    display: block;
+    text-align: center;
+    width: 100%;
+  } 
+  span {
+    margin-bottom: 15px;
+    padding: 0px 5px 0px 5px;
+  }
+  button {
+    display: block;
+    background-color: transparent;
+    outline: none;
+    border: transparent;
+    margin: 0 auto;
+  }
+  .glyphicon {
+    font-size: 40px;
+    color: @primaryColor;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    padding: 25px;
+    display: block;
+    text-align: center;
+    border: 3px solid @primaryColor;
+    border-radius: 200px;
+  }
+
+}
